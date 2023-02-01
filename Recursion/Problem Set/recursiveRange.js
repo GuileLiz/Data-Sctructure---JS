@@ -5,4 +5,3 @@ function recursiveRange(num){
 
 console.log(recursiveRange(6)) // 21
 console.log(recursiveRange(10)) // 55 
-
