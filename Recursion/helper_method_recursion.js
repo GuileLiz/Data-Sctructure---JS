@@ -2,7 +2,7 @@ function collectOddValues(arr){
     
     let result = [];
 
-    function helper(helperInput){
+    function helper(helperInput){ // if I did not call this the var result will be empty always 
         if(helperInput.length === 0) {
             return;
         }
