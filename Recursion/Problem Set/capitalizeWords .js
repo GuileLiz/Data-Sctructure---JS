@@ -6,3 +6,4 @@ function capitalizeWords (array) {
 	res.push(array.slice(array.length-1)[0].toUpperCase());
 	return res;
 }
+comsole.log(capitalizeWords["try","try"])
