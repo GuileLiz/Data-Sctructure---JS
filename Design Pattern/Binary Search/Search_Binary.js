@@ -1,11 +1,8 @@
 function binarySearch(arr,elem) {
 	var start = 0;
 	var end = arr.length - 1;
-	while (arr[middle] !== elem) {
-/* 		if (arr[middle] === elem){
-			console.log(middle)
-		}
-		else  */
+	var middle = Math.floor((start + end) / 2);
+	while (arr[middle] !== elem && start <= end) {
 		if (elem < arr[middle]) {
 			end = middle - 1;
 		} else {
@@ -13,5 +10,6 @@ function binarySearch(arr,elem) {
 		}
 		middle = Math.floor((start + end) / 2);
 	}
+	return arr[middle] === elem ? middle:"Not in the array"
 }
-binarySearch([2,5,6,9,13,15,28],15)
+console.log(binarySearch([2,5,6,9,13,15,28],0))
