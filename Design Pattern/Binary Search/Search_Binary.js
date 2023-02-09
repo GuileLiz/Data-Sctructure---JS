@@ -9,4 +9,3 @@ function binarySearch(arr,elem) {
 	}
 	return arr[middle] === elem ? middle:"Not in the array"
 }
-console.log(binarySearch([2,5,6,9,13,15,28],0))
